@@ -55,7 +55,7 @@ Don't write code for any of these; they come with the script:
 - forms started, submitted and abandoned (never what was typed);
 - Core Web Vitals (LCP, INP, CLS, FCP, TTFB), JavaScript errors and failed same-origin requests.
 
-Custom events, named clicks and identify are in `references/events.md`.
+Custom events, named clicks, identify and linking AI answers to Langfuse traces are in `references/events.md`.
 
 ## Privacy rules
 
