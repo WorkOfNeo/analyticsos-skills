@@ -1,0 +1,12 @@
+{
+  "name": "analyticsos-skills",
+  "owner": { "name": "WorkOfNeo" },
+  "description": "Agent skills for analyticsOS",
+  "plugins": [
+    {
+      "name": "analyticsos",
+      "source": "./plugins/analyticsos",
+      "description": "Add analyticsOS tracking to an app: the script, signed-in users, custom events and named sections."
+    }
+  ]
+}
