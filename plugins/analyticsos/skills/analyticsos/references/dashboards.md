@@ -38,4 +38,4 @@ The server's instructions describe queries and widgets in full; follow them. In 
 5. **Every change is saved at once** as a version of the dashboard; `restore_version` takes one back.
 6. **Finish**: list what you added and give the dashboard's url from the tool results.
 
-To list the site's pages that nobody visits: `crawl_site`, then `page_inventory` a minute or two later.
+To list the site’s pages that nobody visits: `list_inventory` with `filter: "never"` (`rescan_pages` scans again first).
