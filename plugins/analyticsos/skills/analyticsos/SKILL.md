@@ -1,6 +1,6 @@
 ---
 name: analyticsos
-description: Add analyticsOS tracking to a web app or website, or extend it - identify signed-in users, send custom events, name page sections, keep personal data out - and build the app's analyticsOS dashboard through its MCP server. Use when asked to install analyticsOS, add analytics or event tracking with an analyticsOS key (prj_...), work with the aos() calls in a project, or build or change an analyticsOS dashboard.
+description: Add analyticsOS tracking to a web app or website, or extend it - identify signed-in users, send custom events, name page sections, keep personal data out - send its page routes, and build the app's analyticsOS dashboard through its MCP server. Use when asked to install analyticsOS, add analytics or event tracking with an analyticsOS key (prj_...), work with the aos() calls in a project, or build or change an analyticsOS dashboard.
 license: MIT
 ---
 
@@ -44,7 +44,8 @@ The analyticsOS setup page gives them a prompt with these values (and the app's 
 6. **Content-Security-Policy**: if the project sets one, allow the host in `script-src` and `connect-src`.
 7. **Nothing else**: don't add other analytics, cookies or consent banners. analyticsOS needs none of them.
 8. **Finish**: run the project's build and linter, list the files you changed, and tell the person to open the app in a browser. The setup page in analyticsOS ticks off the first page view within seconds.
-9. **Dashboard**: once events arrive, build the app's dashboard in analyticsOS from what you now know about the code: `references/dashboards.md`.
+9. **Routes** (apps with pages behind a sign-in): send the app's own list of its pages after each build, so analyticsOS knows the pages nobody opens: `references/routes.md`. It needs a second, secret key; ask for it, and skip this step if the person doesn't want it now.
+10. **Dashboard**: once events arrive, build the app's dashboard in analyticsOS from what you now know about the code: `references/dashboards.md`.
 
 ## What the script already captures
 

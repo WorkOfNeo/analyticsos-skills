@@ -1,7 +1,7 @@
 {
   "name": "analyticsos",
   "description": "Add analyticsOS tracking to an app and build its dashboard: the script, signed-in users, custom events, named sections, and dashboards through the analyticsOS MCP server.",
-  "version": "1.2.0",
+  "version": "1.3.0",
   "author": { "name": "WorkOfNeo" },
   "repository": "https://github.com/WorkOfNeo/analyticsos-skills",
   "license": "MIT"
