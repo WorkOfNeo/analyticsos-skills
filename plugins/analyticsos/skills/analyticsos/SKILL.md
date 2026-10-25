@@ -1,6 +1,6 @@
 ---
 name: analyticsos
-description: Add analyticsOS tracking to a web app or website, or extend it - identify signed-in users, send custom events, name page sections, keep personal data out. Use when asked to install analyticsOS, add analytics or event tracking with an analyticsOS key (prj_...), or work with the aos() calls in a project.
+description: Add analyticsOS tracking to a web app or website, or extend it - identify signed-in users, send custom events, name page sections, keep personal data out - and build the app's analyticsOS dashboard through its MCP server. Use when asked to install analyticsOS, add analytics or event tracking with an analyticsOS key (prj_...), work with the aos() calls in a project, or build or change an analyticsOS dashboard.
 license: MIT
 ---
 
@@ -10,7 +10,7 @@ analyticsOS records page views, clicks, scrolls, forms, errors, speed and signed
 
 ## What you need from the person
 
-The analyticsOS setup page gives them a prompt with three values. Ask for any that are missing; never guess them.
+The analyticsOS setup page gives them a prompt with these values (and the app's id, for its dashboard). Ask for any that are missing; never guess them.
 
 - **Host**: where their analyticsOS runs, e.g. `https://analytics.example.com`.
 - **Key**: the app's public key, `prj_…`. It is not a secret: it ends up in every page that loads the script.
@@ -44,6 +44,7 @@ The analyticsOS setup page gives them a prompt with three values. Ask for any th
 6. **Content-Security-Policy**: if the project sets one, allow the host in `script-src` and `connect-src`.
 7. **Nothing else**: don't add other analytics, cookies or consent banners. analyticsOS needs none of them.
 8. **Finish**: run the project's build and linter, list the files you changed, and tell the person to open the app in a browser. The setup page in analyticsOS ticks off the first page view within seconds.
+9. **Dashboard**: once events arrive, build the app's dashboard in analyticsOS from what you now know about the code: `references/dashboards.md`.
 
 ## What the script already captures
 

@@ -6,7 +6,7 @@
     {
       "name": "analyticsos",
       "source": "./plugins/analyticsos",
-      "description": "Add analyticsOS tracking to an app: the script, signed-in users, custom events and named sections."
+      "description": "Add analyticsOS tracking to an app and build its dashboard: the script, signed-in users, custom events, named sections, and dashboards through the analyticsOS MCP server."
     }
   ]
 }

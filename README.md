@@ -1,13 +1,14 @@
 # analyticsOS agent skills
 
-Skills that teach coding agents (Claude Code, Cursor, Copilot, Codex…) to add [analyticsOS](https://github.com/WorkOfNeo/analyticsos) tracking to an app: the script in the right place for the stack, signed-in users, custom events, named sections, and keeping personal data out.
+Skills that teach coding agents (Claude Code, Cursor, Copilot, Codex…) to add [analyticsOS](https://github.com/WorkOfNeo/analyticsos) tracking to an app: the script in the right place for the stack, signed-in users, custom events, named sections, and keeping personal data out. Then they build the app's dashboard through the analyticsOS MCP server (`{host}/api/mcp`, with a key from Settings → API keys).
 
 The quickest start is the prompt on analyticsOS's New app page. It looks like this:
 
 ```text
-Install the analyticsOS skill from github.com/WorkOfNeo/analyticsos-skills and use it to add analyticsOS tracking to this app.
+Install the analyticsOS skill from github.com/WorkOfNeo/analyticsos-skills and use it to add analyticsOS tracking to this app. Once events arrive, build its dashboard in analyticsOS too: the skill says how.
 
 App: NEO Ledger (Identified mode)
+App id: cm…
 Host: https://analytics.example.com
 Key: prj_…
 ```
